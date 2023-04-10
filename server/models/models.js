@@ -7,6 +7,7 @@ const Student = sequelize.define('student', {
     nick: {type: DataTypes.STRING, unique: true, allowNull: false},
     name: {type: DataTypes.STRING},
     lastname: {type: DataTypes.STRING},
+    token: {type: DataTypes.STRING, allowNull: true}
 })
 
 module.exports = {
